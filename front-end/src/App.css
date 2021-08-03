@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
+/* navbar */
+body {
+  overflow-x: hidden;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  width: 3.5rem;
+  height: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.search {
+  border: 1px solid #d1d1d1;
+  font: bold 12px Arial,Helvetica,Sans-serif;
+  color: #bebebe;
+  width: 340px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+}
+
+.search:focus {
+  outline : none;
+}
+
+.form-inline .form-control {
+  border: none;
+  background: none;
+  border-bottom: solid 1px #cfcfcf;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-bottom: 0px;
+ }
+
+.btn-outline-dark {
+  color: #495057 !important;
+ }
+
+.form-control, .btn {
+  border-radius: 0rem !important;
+ }
+
+button {
+  outline: none !important;
+  border: none !important;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-bottom-color: black !important;
+  outline: 0;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.form-control, .btn{
+  border-radius: 0rem !important;
+}
+
+.btn.focus, .btn:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.btn-outline-dark  {
+  color: #868788 !important;
+}
+
+.icon {
+  font-size : 1.5rem;
+}
+
+.btn-icon {
+  color: black !important; 
+  background-color: transparent !important; 
+  border-color:  transparent !important; 
+}
+
+.form-inline .form-control:focus, button:hover {
+  background: none !important;
+  outline: none !important;
+  color: black  !important;
+} 
+
+#navbar, .footer {
+   background-color: rgba(103, 69, 224, 0.205) !important;
+   color: rgba(0,0,0,.5) !important;
+ }
+
+
+.button-sign {
+   font-size: 1.2rem !important;
+}
+
+.connection-button,.connection-button:hover {
+  background-color: rgba(0,0,0,.5) !important ;
+  border-radius: 30px !important;
+}
+
+@media only screen and (max-width: 980px) {
+  .search {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
-}
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ @media only screen and (max-width: 580px) {
+  .form-inline .form-control {
+    width: 200px !important;
   }
-  to {
-    transform: rotate(360deg);
+ }
+
+ @media only screen and (max-width: 400px) {
+  .form-inline .form-control {
+    width: 100px !important;
   }
+  .search {
+    width: 280px;
+  }
+ }
+ 
+ /* footer */
+
+ .footer-description {
+  line-height: 1.75rem;
+  font-size: 1.1rem;
+ }
+
+ .footer {
+  margin-top: 5.1rem;
+  margin-bottom: -8rem;
+ }
+
+ .social a {
+ color: rgba(0,0,0,.5);
+ font-size: 1.5rem;
+ }
+
+ .footer-link {
+  color: rgba(0,0,0,.5);
+ }
+
+ .footer-link:hover, .social a:hover {
+  color: black;
+ }
+
+ input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+ }
+
+
+/* dashboard */
+
+ .dash-icon {
+   font-size: 1.3rem;
+ }
+
+ .dashboard-link {
+  vertical-align: middle;
+}
+
+.admin-img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.admin-brand  {
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.dashboard {
+  overflow-x: hidden;
+}
+
+.dashboard-title {
+  margin-left: 28rem !important;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0rem !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color: rgba(0,0,0,.5) !important ;
+  color: #fff !important ;
+}
+
+.nav-pills .nav-link {
+  color: rgba(0,0,0,.5) !important ;
+}
+
+.admin-icons {
+ font-size : 2rem !important;
+}
+
+.dashboard-link {
+  vertical-align: middle;
+}
+
+.admin-img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.admin-brand  {
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.panel{
+  background-color:rgba(103, 69, 224, 0.205) ;
+}
+
+.edit-icon {
+  margin-top: -3rem;
+}
+
+.cartImg {
+  width: 12rem;
+  height: auto;
+}
+
+.cartIcon {
+  font-size: 2rem;
 }
